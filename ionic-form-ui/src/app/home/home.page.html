@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Login
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-center>
+
+                <span class="already">¿Ya esta Registrado?</span>
+
+                <ion-button [routerLink]="['/login']" expand="block" color="success">Ingresar</ion-button>
+                <span class="divider line one-line">0</span>
+
+                <span class="already">Validar Clave</span>
+
+                <ion-button [routerLink]="['/validarClave']" expand="block" color="danger">Validar</ion-button>
+                <span class="divider line one-line">0</span>
+
+                <span class="already">Solicitar Nueva Clave</span>
+                <ion-button [routerLink]="['/registration']" expand="block" color="primary">Solicitar</ion-button>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
