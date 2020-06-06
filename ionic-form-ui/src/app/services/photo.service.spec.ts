@@ -10,3 +10,4 @@ describe('PhotoService', () => {
     expect(service).toBeTruthy();
   });
 });
+

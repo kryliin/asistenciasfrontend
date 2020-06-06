@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'validarClave',
     loadChildren: () => import('./validarClave/validarClave.module').then(m => m.ValidarClavePageModule)
   },
+  {
+    path: 'tomar-foto',
+    loadChildren: () => import('./tomar-foto/tomar-foto.module').then( m => m.TomarFotoPageModule)
+  },
 ];
 
 @NgModule({
