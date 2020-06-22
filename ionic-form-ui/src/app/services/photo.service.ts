@@ -7,7 +7,6 @@ const { Camera, Filesystem, Storage } = Plugins;
   providedIn: 'root'
 })
 export class PhotoService {
-
   public async agregarFoto() {
     // Take a photo
     const capturedPhoto = await Camera.getPhoto({
@@ -16,7 +15,6 @@ export class PhotoService {
       quality: 100
     });
   }
-
   constructor() { }
 }
 

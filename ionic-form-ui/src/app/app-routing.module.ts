@@ -25,6 +25,10 @@ const routes: Routes = [
     path: 'tomar-foto',
     loadChildren: () => import('./tomar-foto/tomar-foto.module').then( m => m.TomarFotoPageModule)
   },
+  {
+    path: 'obtener-persona',
+    loadChildren: () => import('./obtener-persona/obtener-persona.module').then( m => m.ObtenerPersonaPageModule)
+  },
 ];
 
 @NgModule({

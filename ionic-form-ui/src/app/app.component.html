@@ -1,8 +1,22 @@
 <ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-icon ios="ios-arrow-back" md="md-arrow-back">Volver</ion-icon>
+            </ion-buttons>
+            <ion-title>App Asistencias</ion-title>
+        </ion-toolbar>
+
+    </ion-header>
+
     <ion-router-outlet></ion-router-outlet>
 
     <ion-footer>
-        <app-footer></app-footer>
+        <ion-title class="ion-text-center ion-align-items-center">
+            UTN – FRCU - Tics - {{ anio }}
+            <br>
+            Todos Los Derechos Reservado
+        </ion-title>
     </ion-footer>
 </ion-app>
 
