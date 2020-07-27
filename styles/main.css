@@ -69,3 +69,11 @@ input[type="checkbox"] + span {
 input[type="checkbox"]:checked + span {
     background:url(checkbox-filled.svg) left top no-repeat;
 }
+
+footer {
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+

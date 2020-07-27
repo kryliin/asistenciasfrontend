@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Obtener Persona hardcodeado</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="auth-form">
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-center>
+                <ion-item>
+                    <ion-button (click)="obtener();" expand="block" color="primary">Obtener Persona</ion-button>
+                </ion-item>
+                <ion-item>
+                    <ion-button (click)="registrar();" expand="block" color="primary">Registar</ion-button>
+                </ion-item>
+                <ion-item *ngIf="results">
+                    <h2>{{ results }}</h2>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
