@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 export const environment = {
     production: false,
-    entorno: 'DESARROLLO',
-    api_url: 'http://www4.frcu.utn.edu.ar/api/',
+    entorno: "DESARROLLO",
+    api_url: "http://www4.frcu.utn.edu.ar/api/",
     log_level: 5,
     googleAnalyticsKey: false,
 };

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   entorno: 'DESARROLLO',
-  api_url: 'http://www4.frcu.utn.edu.ar/api/',//api_url: 'https://demo-api.cent.gov.ar',
+  api_url: 'http://www4.frcu.utn.edu.ar/api/', // api_url: 'https://demo-api.cent.gov.ar',
   log_level: 5,
   googleAnalyticsKey: false,
 };

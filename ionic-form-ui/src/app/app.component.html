@@ -1,16 +1,18 @@
 <ion-app>
-    <ion-header>
-        <ion-toolbar>
-            <ion-buttons slot="start">
-                <ion-icon ios="ios-arrow-back" md="md-arrow-back">Volver</ion-icon>
-            </ion-buttons>
-            <ion-title>App Asistencias</ion-title>
-        </ion-toolbar>
+    <ion-menu class="menu_main" side="start" content-id="content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content padding>
+            App Asistencias
+        </ion-content>
+    </ion-menu>
 
-    </ion-header>
-
-    <ion-router-outlet></ion-router-outlet>
-
+    <ion-content id="content">
+        <ion-router-outlet></ion-router-outlet>
+    </ion-content>
     <ion-footer>
         <ion-title class="ion-text-center ion-align-items-center">
             UTN – FRCU - Tics - {{ anio }}

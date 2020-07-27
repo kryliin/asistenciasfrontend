@@ -6,8 +6,8 @@ import { Device } from '@ionic-native/device/ngx';
   templateUrl: './registration.page.html',
   styleUrls: ['./registration.page.scss'],
 })
-//var deviceID = device.uuid;
-//var devicePlatform = device.platform;
+// var deviceID = device.uuid;
+// var devicePlatform = device.platform;
 
 export class RegistrationPage implements OnInit {
 

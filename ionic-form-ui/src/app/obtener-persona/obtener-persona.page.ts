@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {ObtenerPersonaService} from '../../app/services/obtener-persona.service';
+import {ObtenerPersonaService} from '../services/obtener-persona.service';
+
 
 @Component({
     selector: 'app-obtener-persona',

@@ -1,6 +1,7 @@
-import 'rxjs/add/observable/of';
+import 'rxjs/obs';
 import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
+import {of} from 'rxjs';
 
 /**
  * Async modal dialog service
@@ -15,7 +16,6 @@ export class DialogService {
    */
   confirm(message?: string): Observable<boolean> {
     const confirmation = window.confirm(message || 'Is it OK?');
-
-    return Observable.of(confirmation);
+    return of(confirmation);
   }
 }

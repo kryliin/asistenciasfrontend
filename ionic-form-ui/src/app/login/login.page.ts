@@ -9,7 +9,11 @@ export class LoginPage implements OnInit {
 
   constructor() { }
 
+
+/*  document.addEventListener('deviceready', onDeviceReady, false);
+  function onDeviceReady() {
+    console.log(device.cordova);
+  }*/
   ngOnInit() {
   }
-
 }
