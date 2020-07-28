@@ -5,6 +5,7 @@ import {IonicModule, IonicRouteStrategy} from '@ionic/angular';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {HttpClientModule} from '@angular/common/http';
+import {HTTP} from '@ionic-native/http/ngx';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 // geolocation and native-geocoder
@@ -24,7 +25,8 @@ import {AppAlertService} from './services/app-alert.service';
         Geolocation,
         NativeGeocoder,
         Device,
-        AppAlertService],
+        AppAlertService,
+        HTTP],
     bootstrap: [AppComponent]
 })
 export class AppModule {

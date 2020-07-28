@@ -17,20 +17,17 @@ export class ObtenerPersonaPage implements OnInit {
     constructor(private obtenerPersonaService: ObtenerPersonaService) {
     }
 
+
     ngOnInit() {
     }
 
     obtener() {
         console.log('llego al obtener');
-        this.obtenerPersonaService.getPersona(this.id).subscribe(results => {
-            this.results = results;
-        });
+        return this.obtenerPersonaService.getPersona(this.id);
     }
 
     registrar() {
-        this.obtenerPersonaService.registrarPersona(this.id2).subscribe(results => {
-            this.results = results;
-        });
+        return this.obtenerPersonaService.registrarPersona(this.id2);
     }
 
 }

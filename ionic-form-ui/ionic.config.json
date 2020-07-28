@@ -1,7 +1,8 @@
 {
   "name": "ionic-form-ui",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
