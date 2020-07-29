@@ -2,11 +2,10 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
 import {AppAlertService} from './app-alert.service';
-import {HTTP} from '@ionic-native/http/ngx';
+import {HTTP} from '@ionic-native/http';
 import {finalize} from 'rxjs/operators';
 import {from, Observable} from 'rxjs';
 import {LoadingController} from '@ionic/angular';
-
 
 @Injectable({
     providedIn: 'root'
@@ -18,7 +17,6 @@ export class ObtenerPersonaService {
                 private loadingCtrl: LoadingController,
                 private appAlertService: AppAlertService) {
     }
-
     data = [];
     url = 'http://www4.frcu.utn.edu.ar/api/';
 
@@ -31,7 +29,6 @@ export class ObtenerPersonaService {
             'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type'
         });
-
         from(nativeCall).pipe(
             finalize(() => loading.dismiss())
         ).subscribe(data => {
