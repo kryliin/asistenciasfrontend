@@ -7,7 +7,6 @@ Ionic Angular specific building blocks on top of [@ionic/core](https://www.npmjs
 
 * [Ionic Core Components](https://www.npmjs.com/package/@ionic/core)
 * [Ionic Documentation](https://ionicframework.com/docs/)
-* [Ionic Worldwide Slack](http://ionicworldwide.herokuapp.com/)
 * [Ionic Forum](https://forum.ionicframework.com/)
 * [Ionicons](http://ionicons.com/)
 * [Stencil](https://stenciljs.com/)
@@ -17,11 +16,11 @@ Ionic Angular specific building blocks on top of [@ionic/core](https://www.npmjs
 
 ## License
 
-* [MIT](https://raw.githubusercontent.com/ionic-team/ionic/master/LICENSE)
+* [MIT](https://raw.githubusercontent.com/ionic-team/ionic/main/LICENSE)
 
 ## Testing ng-add in ionic
 
-1. Pull the latest from master
+1. Pull the latest from `main`
 2. Build ionic/angular: `npm run build`
 3. Run `npm link` from `ionic/angular/dist` directory
 4. Create a blank angular project
